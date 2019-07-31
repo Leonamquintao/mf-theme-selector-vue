@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "serve": "vue-cli-service serve --port 8083",
+    "build": "vue-cli-service build --target wc --name theme-selector ./src/App.vue"
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "document-register-element": "^1.14.1",
     "vue": "^2.6.10",
-    "vuex": "^3.0.1"
+    "vue-custom-element": "^3.2.7",
+    "vuex": "^3.0.1",
+    "webpack": "^4.38.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.9.0",
